@@ -25,13 +25,13 @@ public class Tests {
 
         listPage.明細の行数は(2).である();
 
-        ListPage.Row row1 = listPage.明細の(1).行目();
-        row1.概要は("「Javaエンジニア養成読本」購入申請").である();
-        row1.ステータスは("承認").である();
+        ListPage.Row _1行目の = listPage.明細の(1).行目();
+        _1行目の.概要は("「Javaエンジニア養成読本」購入申請").である();
+        _1行目の.ステータスは("承認").である();
 
-        ListPage.Row row2 = listPage.明細の(2).行目();
-        row2.概要は("「パーフェクトJava EE」購入申請").である();
-        row2.ステータスは("申請中").である();
+        ListPage.Row _2行目の = listPage.明細の(2).行目();
+        _2行目の.概要は("「パーフェクトJava EE」購入申請").である();
+        _2行目の.ステータスは("申請中").である();
 
         listPage.ログアウトする();
     }
@@ -67,8 +67,8 @@ public class Tests {
 
         listPage.明細の行数は(3).である();
 
-        ListPage.Row row3 = listPage.明細の(3).行目();
-        ShinseiPage shinseiPage = row3.詳細画面を開く();
+        ListPage.Row _3行目の = listPage.明細の(3).行目();
+        ShinseiPage shinseiPage = _3行目の.詳細画面を開く();
 
         ShinseiPage.Yet yet = shinseiPage.ステータスは申請前();
         yet.概要は("ほにゃらー").である();
